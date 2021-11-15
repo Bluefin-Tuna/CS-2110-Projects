@@ -1,0 +1,193 @@
+{
+  "version": "1.8.1",
+  "globalBitSize": 1,
+  "clockSpeed": 1,
+  "circuits": [
+    {
+      "name": "RS Latch",
+      "components": [
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.PinPeer",
+          "x": 36,
+          "y": 19,
+          "properties": {
+            "Label location": "EAST",
+            "Label": "notout",
+            "Is input?": "No",
+            "Direction": "WEST",
+            "Bitsize": "1"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.PinPeer",
+          "x": 10,
+          "y": 10,
+          "properties": {
+            "Label location": "WEST",
+            "Label": "S",
+            "Is input?": "Yes",
+            "Direction": "EAST",
+            "Bitsize": "1"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.PinPeer",
+          "x": 10,
+          "y": 19,
+          "properties": {
+            "Label location": "WEST",
+            "Label": "R",
+            "Is input?": "Yes",
+            "Direction": "EAST",
+            "Bitsize": "1"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.PinPeer",
+          "x": 36,
+          "y": 10,
+          "properties": {
+            "Label location": "EAST",
+            "Label": "out",
+            "Is input?": "No",
+            "Direction": "WEST",
+            "Bitsize": "1"
+          }
+        }
+      ],
+      "wires": []
+    },
+    {
+      "name": "Gated D Latch",
+      "components": [
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.PinPeer",
+          "x": 9,
+          "y": 19,
+          "properties": {
+            "Label location": "WEST",
+            "Label": "Enable",
+            "Is input?": "Yes",
+            "Direction": "EAST",
+            "Bitsize": "1"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.PinPeer",
+          "x": 9,
+          "y": 12,
+          "properties": {
+            "Label location": "WEST",
+            "Label": "In",
+            "Is input?": "Yes",
+            "Direction": "EAST",
+            "Bitsize": "1"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.PinPeer",
+          "x": 50,
+          "y": 10,
+          "properties": {
+            "Label location": "EAST",
+            "Label": "Out",
+            "Is input?": "No",
+            "Direction": "WEST",
+            "Bitsize": "1"
+          }
+        }
+      ],
+      "wires": []
+    },
+    {
+      "name": "D Flip-Flop",
+      "components": [
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.PinPeer",
+          "x": 10,
+          "y": 22,
+          "properties": {
+            "Label location": "WEST",
+            "Label": "Enable",
+            "Is input?": "Yes",
+            "Direction": "EAST",
+            "Bitsize": "1"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.PinPeer",
+          "x": 10,
+          "y": 9,
+          "properties": {
+            "Label location": "WEST",
+            "Label": "In",
+            "Is input?": "Yes",
+            "Direction": "EAST",
+            "Bitsize": "1"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.PinPeer",
+          "x": 51,
+          "y": 11,
+          "properties": {
+            "Label location": "EAST",
+            "Label": "Out",
+            "Is input?": "No",
+            "Direction": "WEST",
+            "Bitsize": "1"
+          }
+        }
+      ],
+      "wires": []
+    },
+    {
+      "name": "Register",
+      "components": [
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.PinPeer",
+          "x": 11,
+          "y": 8,
+          "properties": {
+            "Label location": "WEST",
+            "Label": "In",
+            "Is input?": "Yes",
+            "Direction": "EAST",
+            "Bitsize": "4"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.PinPeer",
+          "x": 13,
+          "y": 21,
+          "properties": {
+            "Label location": "WEST",
+            "Label": "clk",
+            "Is input?": "Yes",
+            "Direction": "EAST",
+            "Bitsize": "1"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.PinPeer",
+          "x": 46,
+          "y": 8,
+          "properties": {
+            "Label location": "EAST",
+            "Label": "Out",
+            "Is input?": "No",
+            "Direction": "WEST",
+            "Bitsize": "4"
+          }
+        }
+      ],
+      "wires": []
+    }
+  ],
+  "revisionSignatures": [
+    "CTY5YmYzMzE4MTRlNWE0NWZlN2VkZjZlMzVhMjRkZTczNjJlNDM4Mzk4NTM2YWEwZjZmZDBmYTQ0ODNlMmM0ZTIJMTU0ODA5NjMxMDMyMglhMWZhNmU1MjQ4YWNkMWRhMjQ1M2M2Mzk4MmVhYTAyZmE2YmY1MGEyY2M0Yzg3MzBlMTAzMTEzOWM0ZTJjYjY5",
+    "NjliZjMzMTgxNGU1YTQ1ZmU3ZWRmNmUzNWEyNGRlNzM2MmU0MzgzOTg1MzZhYTBmNmZkMGZhNDQ4M2UyYzRlMgkzODcxZjUzODRhMjgwZDUxZmE1NzliOTc4OWMzMzI5OTkyNDQ4ODIyZGM1M2FjZWFjNGY5Njk0NmY0NmQxODAyCTE1NDgwOTY2MDM1MzYJNDY3ZWI2ZjI2OThhZGRmZWM4NTU3Mjc0NDc2YjIyZDYwN2Q0NTMxZTA4Y2IzMWM4ZDQzZjNhYmQxOGU3NjU5Mw\u003d\u003d",
+    "Mzg3MWY1Mzg0YTI4MGQ1MWZhNTc5Yjk3ODljMzMyOTk5MjQ0ODgyMmRjNTNhY2VhYzRmOTY5NDZmNDZkMTgwMglkYjVhNDQ4MzlhMjNmYjY2OWE1NWUzYTYwYTAzYzQ5MWU1NzU5MTdkYmFjYWY3ZTM1Yzg4MzkzNWU5NmUyYTE0CTE1Njc3OTQ3MzUyNDYJODVkZWQ2NmE2MWIwYzU0ZTBmNDRiN2IwNzczZGM0YzdiNWZhZTVmOTJhNTgyYTBlZGRiZGFjM2M1NDdhOWEwZA\u003d\u003d",
+    "ZGI1YTQ0ODM5YTIzZmI2NjlhNTVlM2E2MGEwM2M0OTFlNTc1OTE3ZGJhY2FmN2UzNWM4ODM5MzVlOTZlMmExNAk4MjVkOTExOGMwNDUwODQxZTU3OTk2YmY2YzQ1YThlNWJhMmE0MmRjNjcxZTQ5NDU0Y2U5OTFmZDI0MGM1NzkxCTE1NjgxNjAxNjMwNjQJNWQ3YTg0N2ZmMGVmYmU4MzlmZmY1ODE2NzVjOWMzMDdlYTRlYjYyZjQyNzBhYTk0OWNmMmUyOTA0M2EyYTE4Mg\u003d\u003d"
+  ]
+}
